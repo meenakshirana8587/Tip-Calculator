@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
+		<script src="calculator.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+
+		<!-- container -->
+		<div id="container">
+
+			<!-- left side box -->
+			<div class="box1">
+				<div class="calculate">
+
+					<!-- bill input -->
+					<label for="bill">Bill</label><br>
+					<input type="text" id="bill" value="0.00"  min="0.00"><br>
+					<!-- end of bill input -->
+					<br>
+
+					<!-- tip increment/decrement -->
+					<label>Tip %</label><br>
+					<div class="incrdecr">
+						<button onclick="tipPercent.decrement()">-</button>
+						<input type="number" id="changetip" value="0" min="0" max="100">
+						<button onclick="tipPercent.increment()">+</button>
+					</div>
+					<!-- end of tip increment/decrement -->
+					<br>
+
+					<!-- people increment/decrement -->
+					<label>Number of people</label><br>
+					<div class="incrdecr">
+						<button onclick="noOfPerson.decrement()">-</button>
+						<input type="number" id="changepeople" value="0"  min="0" >
+						<button onclick="noOfPerson.increment()">+</button>
+					</div>
+					<!-- end of people increment/decrement -->
+					<br>
+
+				</div>
+				<!-- end of calculate -->
+
+			</div>
+			<!-- end of box1 -->
+
+			<!-- right side box -->
+			<div class="box2">
+				<div class="show">
+
+					<!-- tip per person -->
+					<div>
+						<div style="font-size: 25px; font-family: Arial;">Tip</div>
+						<div class="span">per person</div>
+					</div>
+					<!-- end of tip per person -->
+
+					<!-- result for tip per person -->
+					<div id="tipperperson"></div>
+
+					<!-- total per person -->
+					<div>
+						<div style="font-size: 25px; font-family: Arial;">Total</div>
+						<div class="span">per person</div>
+					</div>
+					<!-- end of total per person -->
+
+					<!-- result for total per person -->
+					<div id="totalperperson"></div>
+
+				</div>
+				<!-- end of show -->
+
+			</div>
+			<!-- end of box2 -->
+
+		</div>
+		<!-- end of container -->
+
+	</body>
+
+</html>
