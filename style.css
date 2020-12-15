@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*outer div  */
+#container{
+	width: 600px;
+	border: 1px solid rgba(136, 136, 136, 0.5);
+	border-radius: 15px;
+	position: absolute;
+	top: 200px;
+	left: 375px;
+	bottom: 200px;
+	right: 375px;
+	display: grid;
+	height: 220px;
+	grid-template-columns: 250px 350px;
+}
+/* left div for inputs*/
+.box1{
+	padding: 15px;
+	border-right: 0.5px solid rgba(136, 136, 136, 0.5);
+}
+/*labels for input fields */
+.calculate label{
+	color: #888;
+}
+/*input field */
+.calculate input{
+	width:100%;
+	font-size: 20px;
+	outline: none;
+	text-align: center;
+	border: 1px solid rgba(136, 136, 136, 0.5);
+}
+/*buttons for increment and decrement */
+.incrdecr{
+display: flex;
+flex-direction: row;
+}
+
+
+/*input field for tip percent */
+.incrdecr #changetip{
+	width: 60%;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid rgba(136, 136, 136, 0.5);
+}
+
+
+/* buttons */
+	button{
+		width:20%;
+		border: 1px solid rgba(136, 136, 136, 0.5);
+		font-size: 20px;
+		color: #888;
+		outline: none;
+	}
+	/*input field for no. of persons */
+	.incrdecr #changepeople{
+		width: 60%;
+		text-align: center;
+		font-size: 20px;
+		border: 1px solid rgba(136, 136, 136, 0.5);
+	}
+
+	button:hover{
+		cursor: pointer;
+	}
+	
+
+	.box2{
+		padding: 30px;
+	}
+
+	.show{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(2,1fr);
+		grid-gap:45px 10px;
+	}
+	
+	.show .span{
+		color: #888;
+	}
+
+	.show #tipperperson{
+		font-family: arial;
+		font-size: 30px;
+		font-weight: lighter;
+	}
+
+	.show #totalperperson{
+		font-family: arial;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
